@@ -22,6 +22,7 @@ public class PrimeNumberChecker {
     @Timed(name = "checksTimer", description = "A measure of how long it takes to perform the primality test.", unit = MetricUnits.MILLISECONDS)
     public String checkIfPrime(@PathParam("number") long number) {
 
+        System.out.println("Hello World");
         System.out.println("What?" + number);
 
         if (number < 1) {
